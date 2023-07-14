@@ -1,0 +1,26 @@
+nav {
+  position: sticky;
+  top:0;
+  z-index: 2;
+  box-shadow: 0 0 5px var(--accent-color-tint-light);
+}
+
+nav ul {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.2rem;
+}
+
+nav ul li a{
+  padding: 0.5rem 0;
+  display: inline-block;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  nav ul li a:hover{
+    transform: rotateX(360deg);
+    transition: transform 0.8s;
+  }
+}

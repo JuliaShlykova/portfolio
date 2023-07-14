@@ -1,0 +1,59 @@
+footer {
+  background-color: white;
+  padding: 1rem 10vw 0.5rem 10vw;
+  position: relative;
+  z-index: -2;
+}
+
+footer p:last-of-type {
+  text-align: center;
+}
+
+footer ul {
+  margin: 1.5rem 0;
+}
+
+footer ul li:first-child {
+  margin-bottom: 1rem;
+}
+
+.footer-icon {
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+footer ul li a {
+  display: inline-block;
+  transform-origin: left;
+  transition: transform 0.2s;
+}
+
+footer ul li a:hover {
+  transform: scale(1.2);
+}
+
+@keyframes bouncing {
+  95% {
+    transform: translateX(-95vw) scaleY(0.2);
+  }
+  100% {
+    transform: translateX(-100vw) scaleX(0.5);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animation-footer {
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent-color);
+    border: 1px solid white;
+    border-radius: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform-origin: bottom;
+    animation: bouncing 10s ease-in 5s infinite;
+  }
+
+}

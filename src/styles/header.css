@@ -1,0 +1,125 @@
+header {
+  position: relative;
+  overflow: hidden;
+}
+
+header p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin: 1rem 0;
+}
+
+header p.profession {
+  font-weight: bold;
+}
+
+header img {
+  position: absolute;
+  left: 20vw;
+  top: 0;
+  z-index: -999;
+}
+
+header .header-decoration-left, header .header-decoration-right {
+  position: absolute;
+  background-color: var(--accent-color);
+  width: 40vw;
+  height: 100vw;
+  z-index: -999;
+}
+
+header .header-decoration-left {
+  top:0;
+  left:0;
+  transform: translate(-50%, -50%) rotateZ(45deg);
+}
+
+header .header-decoration-right {
+  bottom:0;
+  right:0;
+  transform: translate(50%, 50%) rotateZ(45deg);
+}
+
+@keyframes appear {
+  0% {
+    opacity: 100%;
+  }
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 10%;
+  }
+}
+
+@keyframes appear-from-right {
+  0% {
+    transform: translateX(100%);
+  }
+  5% {
+    transform: translateX(-50px);
+  }
+  6% {
+    transform: none;
+  }
+}
+
+@keyframes appear-from-left {
+  0% {
+    transform: translateX(-100%);
+  }
+  5% {
+    transform: translateX(50px);
+  }
+  6% {
+    transform: none;
+  }
+}
+
+@keyframes smaller-bigger-left {
+  0% {
+    transform: scale(0.5);
+  }
+  6% {
+    transform: translate(-50%, -50%) rotateZ(45deg);
+  }
+}
+
+@keyframes smaller-bigger-right {
+  0% {
+    transform: scale(0.5);
+  }
+  6% {
+    transform: translate(50%, 50%) rotateZ(45deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  header img {
+    animation-name: appear;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+  header p:nth-child(odd){
+    animation: appear-from-right;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+  }
+  header p:nth-child(even){
+    animation: appear-from-left;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+  }
+  header .header-decoration-right {
+    animation: smaller-bigger-right;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+  }
+  header .header-decoration-left {
+    animation: smaller-bigger-left;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+  }
+}

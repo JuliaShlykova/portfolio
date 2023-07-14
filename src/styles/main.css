@@ -1,0 +1,109 @@
+main {
+  /* padding: 5vw; */
+  line-height: 1.4rem;
+}
+
+main>section#about{
+  padding: 2rem 10vw 1rem 10vw;
+  border-top: 3px solid var(--accent-color);
+}
+
+main h1 {
+  margin: 2rem 0 0.8rem 0;
+}
+
+main h2 {
+  margin: 1.5rem 0 0.8rem 0;
+}
+
+main .skills-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: center;
+}
+
+main .skill {
+  width: 150px;
+  height: 100px;
+  box-shadow: 0 0 10px var(--accent-color-tint-light);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+main .skill img {
+  transition: transform 0.2s;
+  object-fit: contain;
+}
+
+main .skill:hover img {
+  transform: scale(1.2);
+}
+
+main #projects h1 {
+  padding-left: 10vw;
+}
+
+main .project {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  overflow: hidden;
+}
+
+main .project .project-info {
+  background-color: rgba(0,0,0,0.85);
+  color: white;
+  width: min(90vw, 500px);
+  position: absolute;
+  padding: 0 1rem 1rem 1rem;
+}
+
+main .project .project-info .icon-language {
+  height: 1.5rem;
+  margin: 0 0.5rem;
+}
+
+main .project .project-info .links-container {
+  text-align: end;
+}
+
+main .project .project-info a {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  transition: transform 0.3s;
+}
+
+main .project .project-info a:hover {
+  transform: scale(1.3);
+}
+
+main .project .project-info a:hover::before {
+  content: '↗';
+}
+
+main .project .project-info a::before {
+  content: '↖';
+}
+
+main .project .project-img {
+  object-fit: contain;
+  width: max(600px, 50vw);
+}
+
+@media screen and (max-width: 600px) {
+
+  main .project {
+    flex-direction: column;
+  }
+
+  main .project .project-info {
+    position: static;
+    width: 100%;
+  }
+}
