@@ -45,8 +45,8 @@ const Project = ({project}) => {
           })}
         </div>
         <div className="links-container">
-          <a href={url}>Visit site</a>
-          <a href={githubUrl}>GitHub page</a>
+          <a href={url} target="_blank" rel="noreferrer">Visit site</a>
+          <a href={githubUrl} target="_blank" rel="noreferrer">GitHub page</a>
         </div>
       </div>
     </section>

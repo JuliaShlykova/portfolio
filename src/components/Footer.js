@@ -21,7 +21,7 @@ const Footer = () => {
         Visit GitHub to see more projects</a>
       </li>
     </ul>
-    <p>	&copy; Copyright 2023, Julia Shlykova</p>
+    <p>	&copy; Copyright 2024, Julia Shlykova</p>
     <div className='animation-footer'></div>
     </footer>
   )

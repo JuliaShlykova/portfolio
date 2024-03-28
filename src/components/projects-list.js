@@ -4,6 +4,8 @@ import inventory from "../assets/projects/inventory-application.png";
 import memebersOnly from "../assets/projects/members-only.png";
 import shoppingCart from "../assets/projects/shopping-cart.png";
 import waldo from "../assets/projects/where-is-waldo.jpg";
+import messageMe from "../assets/projects/message-me.png";
+import inTune from "../assets/projects/in-tune.png";
 
 import mongodb from "../assets/icons-small/MongoDB.svg";
 import node from "../assets/icons-small/nodejs.svg";
@@ -12,6 +14,20 @@ import firebase from "../assets/icons-small/firebase.svg";
 import pugjs from "../assets/icons-small/pugjs.svg";
 
 const projects = [
+  {name: "messageMe", 
+    description: "MERN-stack website. A chat application with the feature of real-time message exchange, online users and creation of group chats",
+    screenshot: messageMe,
+    githubUrl: "https://github.com/JuliaShlykova/messaging-app-frontends",
+    url: "https://messaging-app-frontend-two.vercel.app/",
+    languages: [mongodb, reactjs, node]
+  },  
+  {name: "In-tune", 
+    description: "MERN-stack website. An application for posts sharing, adding friends and creating profiles.",
+    screenshot: inTune,
+    githubUrl: "https://github.com/JuliaShlykova/in-tune-frontend",
+    url: "https://in-tune-frontend.vercel.app/",
+    languages: [mongodb, reactjs, node]
+  },
   {name: "Blog", 
     description: "MERN-stack website. As a user you can read posts in this blog-site. As an admin you can create ones.",
     screenshot: blog,
