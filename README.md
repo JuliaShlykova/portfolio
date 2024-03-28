@@ -1,5 +1,5 @@
 # Portfolio
-To see the website visit [portfolio](https://vercel.com/juliashlykovas-projects/portfolio-oopz)
+To see the website visit [portfolio](https://julia-shlykova-portfolio.vercel.app/)
 ## Description
 This project is the part of the [TOP project: portfolio](https://www.theodinproject.com/lessons/node-path-advanced-html-and-css-personal-portfolio). It's portfolio of my projects.
 ## References
