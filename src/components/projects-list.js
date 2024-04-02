@@ -17,7 +17,7 @@ const projects = [
   {name: "messageMe", 
     description: "MERN-stack website. A chat application with the feature of real-time message exchange, online users and creation of group chats",
     screenshot: messageMe,
-    githubUrl: "https://github.com/JuliaShlykova/messaging-app-frontends",
+    githubUrl: "https://github.com/JuliaShlykova/messaging-app-frontend",
     url: "https://messaging-app-frontend-two.vercel.app/",
     languages: [mongodb, reactjs, node]
   },  
